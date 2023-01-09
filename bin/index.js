@@ -4,15 +4,12 @@ const yargs = require("yargs");
 const lookup = require("./lookup");
 
 // Add command line parameter and make it required on initialization
-const options = yargs
-  .usage("Usage: -m <macaddress>")
-  .option("m", {
-    alias: "macaddress",
-    describe: "Mac address to search",
-    type: "string",
-    demandOption: true,
-  })
-  .option("h").argv;
+const options = yargs.usage("Usage: -m <macaddress>").option("m", {
+  alias: "macaddress",
+  describe: "Mac address to search",
+  type: "string",
+  demandOption: true,
+}).argv;
 
 // Exit if address is invalid
 if (

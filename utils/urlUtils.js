@@ -1,7 +1,9 @@
 const config = require("../config").config;
 
 class UrlUtils {
-  dataProvider = config.dataProviders[0];
+  dataProvider = config.dataProviders.find((dp) =>
+    dp.baseUrl.includes("macaddress.io")
+  );
   getQueryBasedAuthSearchUrl = (macaddress) => {
     const url = `${this.dataProvider.baseUrl}/${this.dataProvider.version}?apiKey=${this.dataProvider.params.apiKey}&output=${this.dataProvider.params.output}&search=${macaddress}`;
 

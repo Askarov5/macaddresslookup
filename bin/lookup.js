@@ -1,4 +1,4 @@
-const urlUtils = require("../utils/url");
+const urlUtils = require("../utils/urlUtils");
 
 // Use In-built Fetch: requires node verion +18
 const fetchAddressData = async (macaddress) => {
