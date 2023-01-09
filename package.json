@@ -9,12 +9,10 @@
   "author": "Orozbek Askarov",
   "license": "ISC",
   "bin": {
-    "hello": "./bin/index.js"
+    "getMacAddressData": "./bin/index.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "n": "^9.0.1",
-    "stable": "^0.1.8",
     "yargs": "^17.6.2"
   }
 }

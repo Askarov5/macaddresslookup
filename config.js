@@ -8,7 +8,7 @@ const config = {
       version: "v1",
       params: {
         apiKey: process.env.API_KEY,
-        output: "json",
+        output: "vendor",
         search: "",
       },
     },

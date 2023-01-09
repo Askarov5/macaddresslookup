@@ -36,9 +36,8 @@ const getAddressData = (macaddress) => {
       // The whole response has been received. Print out the result.
       resp.on("end", () => {
         if (resp.statusCode == 200) {
-          const jsonData = JSON.parse(data);
           console.log(
-            `Provided mac address is associated with the company: ${jsonData.vendorDetails.companyName}`
+            `Provided mac address is associated with the company: ${data}`
           );
         } else {
           console.error(`${resp.statusCode} : ${resp.statusMessage}`);
