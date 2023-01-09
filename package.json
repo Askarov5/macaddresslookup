@@ -4,7 +4,7 @@
   "description": "lookup mac address in cli",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "getMacAddressData -m 44:38:39:ff:ef:57"
   },
   "author": "Orozbek Askarov",
   "license": "ISC",

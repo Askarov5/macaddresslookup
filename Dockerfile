@@ -1,8 +1,10 @@
-FROM node:18-alpine AS dev
+FROM node:18
 ENV NODE_ENV dev
-WORKDIR /app
+WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
+# RUN npm ci --only=production
 COPY . .
+RUN npm i -g .
 EXPOSE 8080
-CMD ["node", ". -m 44:38:39:ff:ef:57 "]
+CMD ["npm", "test"]

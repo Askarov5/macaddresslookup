@@ -12,7 +12,7 @@ Run following commands:
 
 1. git clone url - clone the repo
 2. npm i - to install the packages
-3. Create a .env file in the root folder which contains API_KEY from macaddress.io
+3. Create a .env file in the root folder which contains API_KEY from [macaddress.io](https://macaddress.io/api/documentation/making-requests)
 4. node . -m macAddress - to get data related to mac address
 
 ### Extra:
