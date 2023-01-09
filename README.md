@@ -23,12 +23,18 @@ Run following commands:
 # Documentation
 
 This application extends the current cmd commands with getMacAddressData. It can be installed globally and reached from anywhere in your terminal.
-macaddress.io
-File structure:
-bin - main source folder
---index.js - contains initialization codes
---lookup.js - contains http requests
-utils - contains utility functions
---urlUtils.js
-.env - contains environment variables and secrets
-config.js - configurations file
+
+File structure:  
+bin - main source folder.
+--index.js - contains initialization codes.
+--lookup.js - contains http requests.
+utils - contains utility functions.
+--urlUtils.js - contains utility functions.
+.env - contains environment variables and secrets.
+config.js - configurations file.
+
+There're 3 files you may need to update.
+
+1. .env - contains API_KEY required for request data from macaddress.io
+2. config file - to change data provider
+3. urlUtils - to change url depending on data provider requirements
